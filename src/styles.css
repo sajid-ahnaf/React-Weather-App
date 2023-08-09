@@ -1,0 +1,128 @@
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling the overall body font */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Styling for the main application container */
+.app {
+  background-color: #00b4d8; /* Setting background color */
+  background-image: url("./assets/img1.jpeg"); /* Adding background image */
+  background-size: cover; /* Ensuring the background image covers the entire container */
+  background-position: bottom; /* Positioning the background image at the bottom */
+  transition: 0.4s ease; /* Adding transition effect */
+}
+
+/* Additional styling when the temperature is warm */
+.app.warm {
+  background-color: #ffc600; /* Changing background color */
+  background-image: url("./assets/img2.jpeg"); /* Changing background image */
+}
+
+/* Styling for the main content container */
+main {
+  min-height: 100vh; /* Ensuring the container takes at least the full viewport height */
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  ); /* Adding a gradient background */
+  padding: 25px; /* Adding padding around the content */
+}
+
+/* Styling for the search input box */
+.search-box {
+  width: 100%; /* Setting the width to span the entire container */
+  margin: 0 0 75px; /* Adding margin at the bottom */
+}
+
+/* Styling for the search input */
+.search-box .search-bar {
+  display: block; /* Making the input a block element */
+  width: 100%; /* Setting the width to fill the container */
+  padding: 15px; /* Adding padding to the input */
+  appearance: none; /* Removing default styling */
+  background: none; /* Removing background */
+  border: none; /* Removing border */
+  outline: none; /* Removing outline */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Adding a semi-transparent background */
+  border-radius: 0px 0px 16px 16px; /* Adding rounded corners */
+  margin-top: -25px; /* Adjusting margin to overlap previous content */
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2); /* Adding a subtle shadow */
+  color: #313131; /* Setting text color */
+  font-size: 20px; /* Setting font size */
+  transition: 0.4s ease; /* Adding transition effect */
+}
+
+/* Styling for the focused search input */
+.search-box .search-bar:focus {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.75
+  ); /* Changing background on focus */
+}
+
+/* Styling for location information */
+.location-box .location {
+  color: #fff; /* Setting text color */
+  font-size: 32px; /* Setting font size */
+  font-weight: 500; /* Setting font weight */
+  text-align: center; /* Centering text */
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5); /* Adding a shadow to the text */
+}
+
+/* Styling for date information */
+.location-box .date {
+  color: #fff; /* Setting text color */
+  font-size: 16px; /* Setting font size */
+  font-weight: 300; /* Setting font weight */
+  text-align: center; /* Centering text */
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5); /* Adding a shadow to the text */
+}
+
+/* Styling for weather information container */
+.weather-box {
+  text-align: center; /* Centering the content */
+}
+
+/* Styling for temperature display */
+.weather-box .temp {
+  position: relative; /* Positioning for the temperature element */
+  display: inline-block; /* Displaying as inline-block */
+  margin: 30px auto; /* Adding margin for spacing */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Adding a semi-transparent background */
+  border-radius: 16px; /* Adding rounded corners */
+  padding: 15px 25px; /* Adding padding */
+  color: #fff; /* Setting text color */
+  font-size: 102px; /* Setting font size */
+  font-weight: 900; /* Setting font weight */
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5); /* Adding a shadow to the text */
+  text-align: center; /* Centering the text */
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2); /* Adding a shadow */
+}
+
+/* Styling for weather condition text */
+.weather-box .weather {
+  color: #fff; /* Setting text color */
+  font-size: 48px; /* Setting font size */
+  font-weight: 700; /* Setting font weight */
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5); /* Adding a shadow to the text */
+}
